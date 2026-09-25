@@ -3,7 +3,7 @@
 ## Project Information
 - **Project Type**: Greenfield
 - **Start Date**: 2026-09-25T05:23:45Z
-- **Current Stage**: INCEPTION - User Stories (generated-story approval pending)
+- **Current Stage**: INCEPTION - Application Design (approval pending)
 
 ## Workspace State
 - **Existing Code**: No
@@ -22,12 +22,21 @@
 | Security Baseline | Yes | Requirements Analysis |
 | Property-Based Testing | No | Requirements Analysis |
 
+## Execution Plan Summary
+- **Stages to Execute**: Application Design; Units Generation; Functional Design; NFR Requirements; NFR Design; Code Generation; Build and Test
+- **Stages to Skip**: Infrastructure Design (no deployment infrastructure in scope)
+- **Current Plan Status**: Approval pending
+
 ## Stage Progress
 - [x] INCEPTION - Workspace Detection
 - [x] INCEPTION - Requirements Analysis
-- [x] INCEPTION - User Stories (generated-story approval pending)
-- [ ] INCEPTION - Workflow Planning
-- [ ] INCEPTION - Application Design (assessment pending)
-- [ ] INCEPTION - Units Generation (assessment pending)
-- [ ] CONSTRUCTION - Per-unit design and code generation
-- [ ] CONSTRUCTION - Build and Test
+- [x] INCEPTION - User Stories
+- [x] INCEPTION - Workflow Planning
+- [x] INCEPTION - Application Design (approval pending)
+- [ ] INCEPTION - Units Generation (execute)
+- [ ] CONSTRUCTION - Functional Design (execute)
+- [ ] CONSTRUCTION - NFR Requirements (execute)
+- [ ] CONSTRUCTION - NFR Design (execute)
+- [ ] CONSTRUCTION - Infrastructure Design (skip)
+- [ ] CONSTRUCTION - Code Generation (execute)
+- [ ] CONSTRUCTION - Build and Test (execute)

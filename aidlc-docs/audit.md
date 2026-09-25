@@ -150,6 +150,62 @@ keep README.md updated as we go for my github repository"
 
 ---
 
+## User Stories - Generated Artifacts Approval Response
+**Timestamp**: 2026-09-25T05:43:37Z
+**User Input**: "approve and continue"
+**AI Response**: "Recorded explicit approval of the generated User Stories artifacts and proceeded to Workflow Planning."
+**Context**: INCEPTION - User Stories approved
+
+---
+
+## Workflow Planning - Approval Requested
+**Timestamp**: 2026-09-25T05:43:37Z
+**User Input**: ""
+**AI Response**: "Created an execution plan recommending Application Design, Units Generation, Functional Design, NFR Requirements, NFR Design, Code Generation, and Build and Test. Infrastructure Design is recommended for skip because deployment infrastructure is explicitly out of scope. Options: Request Changes; Add Skipped Stages; Approve & Continue to Application Design."
+**Context**: INCEPTION - Workflow Planning approval gate
+
+---
+
+## Workflow Planning - Approval Response
+**Timestamp**: 2026-09-25T05:46:44Z
+**User Input**: "ok then pls go ahead with application design"
+**AI Response**: "Recorded explicit approval of the workflow plan and proceeded to Application Design."
+**Context**: INCEPTION - Workflow Planning approved
+
+---
+
+## Application Design - Planning Questions
+**Timestamp**: 2026-09-25T05:46:44Z
+**User Input**: "ok then pls go ahead with application design"
+**AI Response**: "Created an application-design plan and requested decisions on component organization and rate-limit policy."
+**Context**: INCEPTION - Application Design; awaiting user answers
+
+---
+
+## Application Design - User Response Requested
+**Timestamp**: 2026-09-25T05:46:44Z
+**User Input**: ""
+**AI Response**: "Requested completion of the application-design plan questions before generating application-design artifacts."
+**Context**: INCEPTION - Application Design gate
+
+---
+
+## Application Design - Planning Response
+**Timestamp**: 2026-09-25T05:48:24Z
+**User Input**: "done"
+**AI Response**: "Validated the compact component organization and the 100 requests per IP per 15-minute rate-limit policy. Generated application-design artifacts and verified applicable security constraints."
+**Context**: INCEPTION - Application Design
+
+---
+
+## Application Design - Approval Requested
+**Timestamp**: 2026-09-25T05:48:24Z
+**User Input**: ""
+**AI Response**: "Created components, component methods, service, dependency, and consolidated design artifacts. Applicable security rules are compliant and remaining infrastructure-only rules are N/A. No blocking findings. Options: Request Changes, or Approve & Continue to Units Generation."
+**Context**: INCEPTION - Application Design approval gate
+
+---
+
 ## Workspace Detection Findings
 **Timestamp**: 2026-09-25T05:23:45Z
 **User Input**: "Using AI-DLC, build a URL shortener API that takes a long URL and returns
