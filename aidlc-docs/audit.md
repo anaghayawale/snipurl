@@ -270,6 +270,213 @@ keep README.md updated as we go for my github repository"
 
 ---
 
+## Construction - Functional Design Started
+**Timestamp**: 2026-09-25T06:46:23Z
+**User Input**: "ok start with construction phase"
+**AI Response**: "Recorded explicit authorization to start Construction and began Functional Design for the `url-shortener-api` unit."
+**Context**: CONSTRUCTION - Functional Design
+
+---
+
+## Functional Design - Planning Questions
+**Timestamp**: 2026-09-25T06:46:23Z
+**User Input**: "ok start with construction phase"
+**AI Response**: "Created a Functional Design plan and requested decisions on fixed short-code length and collision retry policy."
+**Context**: CONSTRUCTION - Functional Design; awaiting user answers
+
+---
+
+## Functional Design - User Response Requested
+**Timestamp**: 2026-09-25T06:46:23Z
+**User Input**: ""
+**AI Response**: "Requested completion of the Functional Design plan questions before generating functional-design artifacts."
+**Context**: CONSTRUCTION - Functional Design gate
+
+---
+
+## Functional Design - Planning Response
+**Timestamp**: 2026-09-25T06:51:54Z
+**User Input**: "done"
+**AI Response**: "Validated the selections of seven-character codes and five collision retries. Identified missing explicit input-size bounds required by the enabled security baseline."
+**Context**: CONSTRUCTION - Functional Design
+
+---
+
+## Functional Design - Input Limits Clarification
+**Timestamp**: 2026-09-25T06:51:54Z
+**User Input**: "done"
+**AI Response**: "Created a clarification question for destination-URL and JSON body size limits."
+**Context**: CONSTRUCTION - Functional Design; awaiting user answer
+
+---
+
+## Functional Design - Clarification Response Requested
+**Timestamp**: 2026-09-25T06:51:54Z
+**User Input**: ""
+**AI Response**: "Requested selection of explicit input limits before generating Functional Design artifacts."
+**Context**: CONSTRUCTION - Functional Design gate
+
+---
+
+## Functional Design - Input Limits Clarification Response
+**Timestamp**: 2026-09-25T06:52:44Z
+**User Input**: "done"
+**AI Response**: "Validated the selection of a 2,048-character destination-URL limit and a 4 KiB JSON-body limit."
+**Context**: CONSTRUCTION - Functional Design
+
+---
+
+## Functional Design - Approval Requested
+**Timestamp**: 2026-09-25T06:52:44Z
+**User Input**: ""
+**AI Response**: "Created the business logic model, business rules, and domain entities. Applicable security rules are compliant: validation bounds, explicitly public routes, safe errors, rate limiting, and fail-closed outcomes are documented. No blocking findings. Options: Request Changes, or Continue to Next Stage (NFR Requirements)."
+**Context**: CONSTRUCTION - Functional Design approval gate
+
+---
+
+## Functional Design - Approval Response
+**Timestamp**: 2026-09-25T06:54:49Z
+**User Input**: "continue"
+**AI Response**: "Recorded explicit approval of Functional Design and proceeded to NFR Requirements."
+**Context**: CONSTRUCTION - Functional Design approved
+
+---
+
+## NFR Requirements - Planning Questions
+**Timestamp**: 2026-09-25T06:54:49Z
+**User Input**: "continue"
+**AI Response**: "Created an NFR Requirements plan and requested choices for performance profile, availability expectation, and Node.js runtime support policy."
+**Context**: CONSTRUCTION - NFR Requirements; awaiting user answers
+
+---
+
+## NFR Requirements - User Response Requested
+**Timestamp**: 2026-09-25T06:54:49Z
+**User Input**: ""
+**AI Response**: "Requested completion of the NFR Requirements plan questions before generating NFR artifacts."
+**Context**: CONSTRUCTION - NFR Requirements gate
+
+---
+
+## NFR Requirements - Planning Response
+**Timestamp**: 2026-09-25T06:56:17Z
+**User Input**: "dnoe"
+**AI Response**: "Treated the response as confirmation of questionnaire completion and validated selections for a small public-service profile, best-effort availability, and a pinned supported Node.js LTS major."
+**Context**: CONSTRUCTION - NFR Requirements
+
+---
+
+## NFR Requirements - Approval Requested
+**Timestamp**: 2026-09-25T06:56:17Z
+**User Input**: ""
+**AI Response**: "Created NFR requirements and technology-stack decisions. Chosen profile: 10 requests per second, local p95 below 500 ms for create and metadata, best-effort availability, Node.js 24 LTS major, TypeScript, Express, Zod, express-rate-limit, Pino, Vitest, and Supertest. Applicable security requirements are compliant; remaining infrastructure-only rules are N/A. No blocking findings. Options: Request Changes, or Continue to Next Stage (NFR Design)."
+**Context**: CONSTRUCTION - NFR Requirements approval gate
+
+---
+
+## NFR Requirements - Approval Response
+**Timestamp**: 2026-09-25T06:58:45Z
+**User Input**: "continue"
+**AI Response**: "Recorded explicit approval of NFR Requirements and proceeded to NFR Design."
+**Context**: CONSTRUCTION - NFR Requirements approved
+
+---
+
+## NFR Design - Planning Question
+**Timestamp**: 2026-09-25T06:58:45Z
+**User Input**: "continue"
+**AI Response**: "Created an NFR Design plan and requested the request-ID exposure policy for safe troubleshooting and structured logs."
+**Context**: CONSTRUCTION - NFR Design; awaiting user answer
+
+---
+
+## NFR Design - User Response Requested
+**Timestamp**: 2026-09-25T06:58:45Z
+**User Input**: ""
+**AI Response**: "Requested completion of the NFR Design plan question before generating NFR design artifacts."
+**Context**: CONSTRUCTION - NFR Design gate
+
+---
+
+## NFR Design - Planning Response
+**Timestamp**: 2026-09-25T07:01:05Z
+**User Input**: "done"
+**AI Response**: "Validated the selection to generate or safely accept request IDs, log them, and return them in X-Request-Id."
+**Context**: CONSTRUCTION - NFR Design
+
+---
+
+## NFR Design - Approval Requested
+**Timestamp**: 2026-09-25T07:01:05Z
+**User Input**: ""
+**AI Response**: "Created NFR design patterns and logical components for input boundaries, rate limiting, request correlation, structured logging, global safe errors, performance bounds, dependency hygiene, and best-effort availability. Applicable security requirements are compliant and remaining rules are N/A. No blocking findings. Options: Request Changes, or Continue to Next Stage (Infrastructure Design will be skipped; then Code Generation)."
+**Context**: CONSTRUCTION - NFR Design approval gate
+
+---
+
+## NFR Design - Approval Response
+**Timestamp**: 2026-09-25T07:02:37Z
+**User Input**: "continue"
+**AI Response**: "Recorded explicit approval of NFR Design, recorded the pre-approved Infrastructure Design skip, and proceeded to Code Generation planning."
+**Context**: CONSTRUCTION - NFR Design approved; Infrastructure Design skipped
+
+---
+
+## Code Generation - Plan Approval Requested
+**Timestamp**: 2026-09-25T07:02:37Z
+**User Input**: ""
+**AI Response**: "Created the complete seven-step Code Generation plan for the `url-shortener-api` unit. It covers TypeScript setup, core logic, logic tests, HTTP and NFR middleware, API tests, README and code summary, then type/test/security verification. Application code will not be generated until this plan receives explicit approval."
+**Context**: CONSTRUCTION - Code Generation, Part 1 approval gate
+
+---
+
+## Code Generation - Plan Approval Response
+**Timestamp**: 2026-09-25T07:16:33Z
+**User Input**: "Approve Plan & Generate Code"
+**AI Response**: "Recorded explicit approval of the Code Generation plan and executed all seven planned generation steps."
+**Context**: CONSTRUCTION - Code Generation, Part 1 approved; Part 2 complete
+
+---
+
+## Code Generation - Verification Results
+**Timestamp**: 2026-09-25T07:16:33Z
+**User Input**: ""
+**AI Response**: "Generated the Node.js TypeScript Express API, core and HTTP tests, README, code summary, manifest, and lock file. `npm run typecheck`, `npm run build`, and `npm test` passed; 11 tests passed across 2 files. The final `npm run audit` reported 0 vulnerabilities."
+**Context**: CONSTRUCTION - Code Generation verification
+
+---
+
+## Code Generation - Generated Code Approval Requested
+**Timestamp**: 2026-09-25T07:16:33Z
+**User Input**: ""
+**AI Response**: "Requested review of the generated code before Build and Test. Options: Request Changes, or Continue to Next Stage (Build and Test)."
+**Context**: CONSTRUCTION - Code Generation approval gate
+
+---
+
+## Code Generation - Generated Code Approval Response
+**Timestamp**: 2026-09-25T07:19:32Z
+**User Input**: "ok great we can proceed to next"
+**AI Response**: "Recorded explicit approval of generated code and proceeded to Build and Test."
+**Context**: CONSTRUCTION - Code Generation approved
+
+---
+
+## Build and Test Stage
+**Timestamp**: 2026-09-25T07:19:32Z
+**Build Status**: Success
+**Test Status**: Pass - 11 passed, 0 failed
+**Files Generated**:
+- build-instructions.md
+- unit-test-instructions.md
+- integration-test-instructions.md
+- performance-test-instructions.md
+- security-test-instructions.md
+- build-and-test-summary.md
+**Context**: CONSTRUCTION - Build and Test approval gate
+
+---
+
 ## Workspace Detection Findings
 **Timestamp**: 2026-09-25T05:23:45Z
 **User Input**: "Using AI-DLC, build a URL shortener API that takes a long URL and returns
