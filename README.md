@@ -1,86 +1,80 @@
-# SnipURL
+# How SnipURL Was Created with AI-DLC
 
-A compact, in-memory URL shortener API built with Node.js, TypeScript, and Express.
+SnipURL is a URL-shortener API created through the AI-Driven Development Life Cycle (AI-DLC). This README records the development process, approval gates, design decisions, and delivered artifacts rather than serving as an end-user API manual.
 
-## Status
+## Outcome
 
-Build and Test instructions are complete and awaiting approval. Type checking, build, 11 automated tests, and dependency audit have passed; representative-host performance testing remains pending.
+The completed scope delivers a compact Node.js, TypeScript, and Express API that:
 
-## Requirements
+- Creates a random seven-character short code for a valid HTTP(S) URL.
+- Redirects a known short code with HTTP 302.
+- Tracks one click for each resolved redirect.
+- Returns link metadata and click counts.
+- Applies input validation, rate limiting, request IDs, generic safe errors, and structured non-sensitive logging.
 
-- Node.js 24 LTS
-- npm
+The generated application lives in `src/`, tests live in `test/`, and the AI-DLC record lives in `aidlc-docs/`.
 
-## Install and run
+## AI-DLC Lifecycle
 
-```sh
-npm ci
-npm run dev
-```
+### Inception
 
-The API listens on `http://localhost:3000` by default. Set `PORT` to use a different port.
+The project began as a greenfield workspace. The following stages were completed and explicitly approved:
 
-For a compiled run:
+1. **Workspace Detection**: Confirmed that there was no existing application code, build system, README, or earlier AI-DLC state.
+2. **Requirements Analysis**: Defined the public API contract, in-memory lifecycle, input limits, generated codes, HTTP 302 redirects, click semantics, and initial delivery scope.
+3. **User Stories**: Created two public personas and five stories for creation, validation, redirection, metadata, and safe public operation.
+4. **Workflow Planning**: Selected the relevant construction stages and skipped infrastructure design because cloud deployment was not originally in scope.
+5. **Application Design**: Defined a compact Express design with internal responsibilities for routing, validation, link handling, code generation, storage, rate limiting, and errors.
+6. **Units Generation**: Grouped all stories into one unit of work, `url-shortener-api`, with a compact `src/` layout.
 
-```sh
-npm run build
-npm start
-```
+### Construction
 
-## API
+The following stages were completed and explicitly approved for the single unit:
 
-### Create a short URL
+1. **Functional Design**: Defined the Link Record domain model, seven-character code format, five-attempt collision policy, 2,048-character destination limit, 4 KiB request limit, and click-count state transitions.
+2. **NFR Requirements**: Chose Node.js 24 LTS, a 10-requests-per-second initial target, best-effort availability, and the applicable security requirements.
+3. **NFR Design**: Added request correlation, rate limiting, validation boundaries, safe errors, structured logging, dependency hygiene, and documented in-memory limitations.
+4. **Code Generation**: Created the API, tests, project configuration, lock file, and supporting documentation.
+5. **Build and Test**: Type checking, build, 11 automated tests, and dependency audit all passed.
 
-`POST /api/urls`
+### Operations
 
-```json
-{
-  "url": "https://example.com/a-long-path"
-}
-```
+The current AI-DLC Operations stage is a placeholder. No deployment, hosting, persistent storage, monitoring, or production infrastructure was implemented as part of the approved scope.
 
-Success response (`201`):
+## Key Decisions
 
-```json
-{
-  "code": "Ab3xYz9",
-  "url": "https://example.com/a-long-path",
-  "createdAt": "2026-09-25T00:00:00.000Z",
-  "clickCount": 0
-}
-```
+| Decision | Selected approach |
+|---|---|
+| Runtime | Node.js 24 LTS with TypeScript and Express |
+| Storage | In memory only |
+| Short code | Random, alphanumeric, seven characters |
+| Collision handling | Up to five generated candidates per create request |
+| Redirect | HTTP 302; increment count once when resolved |
+| Input limits | URL up to 2,048 characters; JSON body up to 4 KiB |
+| Public protection | 100 requests per IP per 15 minutes |
+| Error handling | Generic responses with `X-Request-Id` correlation |
+| Security extension | Enabled |
+| Resiliency and property-based-testing extensions | Not enabled |
 
-### Redirect
+## Verification Results
 
-`GET /:code` returns HTTP `302` with `Location` set to the original URL. A successful resolved redirect increments `clickCount` once.
+- `npm run typecheck`: passed.
+- `npm run build`: passed.
+- `npm test`: passed, with 11 tests across 2 test files.
+- `npm run audit`: passed with 0 vulnerabilities at the configured high-severity threshold.
 
-### Get metadata
+Detailed results and repeatable commands are in `aidlc-docs/construction/build-and-test/`.
 
-`GET /api/urls/:code` returns the code, original URL, creation time, and current click count.
+## AI-DLC Artifact Map
 
-## Limits and safety behavior
+- `aidlc-docs/inception/requirements/`: approved requirements and clarifications.
+- `aidlc-docs/inception/user-stories/`: personas and user stories.
+- `aidlc-docs/inception/plans/`: workflow, design, unit, and story plans.
+- `aidlc-docs/inception/application-design/`: components, dependencies, and unit-of-work artifacts.
+- `aidlc-docs/construction/`: functional design, NFR artifacts, code-generation plan, and build/test instructions.
+- `aidlc-docs/aidlc-state.md`: current lifecycle state.
+- `aidlc-docs/audit.md`: timestamped raw user inputs, approvals, and workflow events.
 
-- Only absolute `http` and `https` destinations are accepted.
-- Destination URLs are limited to 2,048 characters; JSON request bodies are limited to 4 KiB.
-- Codes are server-generated, alphanumeric, and seven characters long. Custom aliases and expiration are not supported.
-- Public endpoints are rate limited to 100 requests per IP address per 15 minutes.
-- Responses include `X-Request-Id`; valid caller-provided IDs are accepted, otherwise one is generated.
-- Errors are generic and do not reveal stack traces or raw destination URLs.
-- Links and rate-limit state are in memory only. Restarting the process permanently removes all links and resets limits.
-- This is a best-effort service with no availability SLA, persistence, failover, or horizontal scaling.
+## Hosting Considerations
 
-## Test and verification
-
-```sh
-npm test
-npm run typecheck
-npm run audit
-```
-
-## Project scope
-
-The initial release intentionally excludes authentication, user accounts, persistent storage, Docker, cloud deployment, and frontend UI.
-
-## AI-DLC documentation
-
-AI-DLC records are maintained in `aidlc-docs/`. The approved requirements, designs, plans, and code-generation summary provide the project audit trail.
+The current in-memory design is suitable for local development and learning. It is not suitable for reliable serverless hosting because links, click counts, and rate-limit state can reset or diverge across instances. A production deployment should add persistent storage, a shared rate-limit store, hosted performance testing, monitoring, and a dedicated production-hardening review.
