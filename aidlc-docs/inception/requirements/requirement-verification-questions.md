@@ -14,7 +14,7 @@ C) Java with Spring Boot
 
 X) Other (describe the preferred runtime and framework)
 
-[Answer]:
+[Answer]: from A and B which one is easy to configure. I'm aware of A but not B
 
 ## Question 2: Data storage
 
@@ -28,7 +28,7 @@ C) In-memory store only (data is lost when the API restarts)
 
 X) Other (describe the preferred storage)
 
-[Answer]:
+[Answer]: C
 
 ## Question 3: Public API contract
 
@@ -40,7 +40,7 @@ B) `POST /shorten` to create, `GET /:code` to redirect, and `GET /stats/:code` t
 
 X) Other (describe the required endpoint paths and response format)
 
-[Answer]:
+[Answer]: A
 
 ## Question 4: Short-code creation and custom aliases
 
@@ -52,7 +52,7 @@ B) Server-generated codes with an optional caller-provided custom alias
 
 X) Other (describe the required code or alias policy)
 
-[Answer]:
+[Answer]: A
 
 ## Question 5: Expiration and invalid destinations
 
@@ -66,7 +66,7 @@ C) Links never expire; accept any syntactically valid URL scheme
 
 X) Other (describe the required expiry and URL-validation policy)
 
-[Answer]:
+[Answer]: A
 
 ## Question 6: Redirect and click-count semantics
 
@@ -80,7 +80,7 @@ C) Increment before attempting every redirect request, including destinations th
 
 X) Other (describe the counting and redirect policy)
 
-[Answer]:
+[Answer]: I'm not sure on this what is recommended
 
 ## Question 7: Delivery target
 
@@ -94,7 +94,7 @@ C) API source, automated tests, README, local run instructions, Docker configura
 
 X) Other (describe the required delivery target)
 
-[Answer]:
+[Answer]: A
 
 ## Question 8: Resiliency extension
 
@@ -106,7 +106,7 @@ B) No - skip the resiliency baseline
 
 X) Other (describe the preferred resiliency posture)
 
-[Answer]:
+[Answer]: what is resiliency baseline
 
 ## Question 9: Security extension
 
@@ -118,7 +118,7 @@ B) No - skip the security rules
 
 X) Other (describe the required security posture)
 
-[Answer]:
+[Answer]: what security rules we are talking about here?
 
 ## Question 10: Property-based testing extension
 
@@ -132,4 +132,4 @@ C) No - skip property-based testing rules
 
 X) Other (describe the required testing approach)
 
-[Answer]:
+[Answer]: C
