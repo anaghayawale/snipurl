@@ -334,6 +334,46 @@ keep README.md updated as we go for my github repository"
 
 ---
 
+## Functional Design - Approval Response
+**Timestamp**: 2026-09-25T06:54:49Z
+**User Input**: "continue"
+**AI Response**: "Recorded explicit approval of Functional Design and proceeded to NFR Requirements."
+**Context**: CONSTRUCTION - Functional Design approved
+
+---
+
+## NFR Requirements - Planning Questions
+**Timestamp**: 2026-09-25T06:54:49Z
+**User Input**: "continue"
+**AI Response**: "Created an NFR Requirements plan and requested choices for performance profile, availability expectation, and Node.js runtime support policy."
+**Context**: CONSTRUCTION - NFR Requirements; awaiting user answers
+
+---
+
+## NFR Requirements - User Response Requested
+**Timestamp**: 2026-09-25T06:54:49Z
+**User Input**: ""
+**AI Response**: "Requested completion of the NFR Requirements plan questions before generating NFR artifacts."
+**Context**: CONSTRUCTION - NFR Requirements gate
+
+---
+
+## NFR Requirements - Planning Response
+**Timestamp**: 2026-09-25T06:56:17Z
+**User Input**: "dnoe"
+**AI Response**: "Treated the response as confirmation of questionnaire completion and validated selections for a small public-service profile, best-effort availability, and a pinned supported Node.js LTS major."
+**Context**: CONSTRUCTION - NFR Requirements
+
+---
+
+## NFR Requirements - Approval Requested
+**Timestamp**: 2026-09-25T06:56:17Z
+**User Input**: ""
+**AI Response**: "Created NFR requirements and technology-stack decisions. Chosen profile: 10 requests per second, local p95 below 500 ms for create and metadata, best-effort availability, Node.js 24 LTS major, TypeScript, Express, Zod, express-rate-limit, Pino, Vitest, and Supertest. Applicable security requirements are compliant; remaining infrastructure-only rules are N/A. No blocking findings. Options: Request Changes, or Continue to Next Stage (NFR Design)."
+**Context**: CONSTRUCTION - NFR Requirements approval gate
+
+---
+
 ## Workspace Detection Findings
 **Timestamp**: 2026-09-25T05:23:45Z
 **User Input**: "Using AI-DLC, build a URL shortener API that takes a long URL and returns

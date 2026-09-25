@@ -4,7 +4,7 @@ An AI-DLC-managed URL shortener API project.
 
 ## Status
 
-Inception is complete and approved. Functional Design is complete and awaiting explicit approval; no implementation work has started.
+Inception and Functional Design are approved. NFR Requirements are complete and awaiting explicit approval; no implementation work has started.
 
 ## Requested capabilities
 
@@ -54,3 +54,7 @@ The active Functional Design plan is `aidlc-docs/construction/plans/url-shortene
 The active Functional Design clarification is `aidlc-docs/construction/plans/url-shortener-api-functional-design-clarification-questions.md`.
 
 Functional Design artifacts are in `aidlc-docs/construction/url-shortener-api/functional-design/`.
+
+The active NFR Requirements plan is `aidlc-docs/construction/plans/url-shortener-api-nfr-requirements-plan.md`.
+
+NFR artifacts are in `aidlc-docs/construction/url-shortener-api/nfr-requirements/`.

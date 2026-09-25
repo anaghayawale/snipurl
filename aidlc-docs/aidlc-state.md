@@ -3,7 +3,7 @@
 ## Project Information
 - **Project Type**: Greenfield
 - **Start Date**: 2026-09-25T05:23:45Z
-- **Current Stage**: CONSTRUCTION - Functional Design (approval pending)
+- **Current Stage**: CONSTRUCTION - NFR Requirements (approval pending)
 
 ## Workspace State
 - **Existing Code**: No
@@ -25,7 +25,7 @@
 ## Execution Plan Summary
 - **Stages to Execute**: Application Design; Units Generation; Functional Design; NFR Requirements; NFR Design; Code Generation; Build and Test
 - **Stages to Skip**: Infrastructure Design (no deployment infrastructure in scope)
-- **Current Plan Status**: Construction started; Functional Design answers pending
+- **Current Plan Status**: Functional Design approved; NFR Requirements answers pending
 
 ## Stage Progress
 - [x] INCEPTION - Workspace Detection
@@ -34,8 +34,8 @@
 - [x] INCEPTION - Workflow Planning
 - [x] INCEPTION - Application Design
 - [x] INCEPTION - Units Generation
-- [x] CONSTRUCTION - Functional Design (approval pending)
-- [ ] CONSTRUCTION - NFR Requirements (execute)
+- [x] CONSTRUCTION - Functional Design
+- [x] CONSTRUCTION - NFR Requirements (approval pending)
 - [ ] CONSTRUCTION - NFR Design (execute)
 - [ ] CONSTRUCTION - Infrastructure Design (skip)
 - [ ] CONSTRUCTION - Code Generation (execute)
@@ -43,5 +43,5 @@
 
 ## Current Status
 - **Lifecycle Phase**: CONSTRUCTION
-- **Current Stage**: Functional Design for `url-shortener-api`
-- **Status**: Awaiting Functional Design approval
+- **Current Stage**: NFR Requirements for `url-shortener-api`
+- **Status**: Awaiting NFR Requirements approval
