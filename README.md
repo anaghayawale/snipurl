@@ -4,7 +4,7 @@ An AI-DLC-managed URL shortener API project.
 
 ## Status
 
-Inception is complete and approved. Construction has not started and will begin only after explicit instruction.
+Inception is complete and approved. Functional Design is complete and awaiting explicit approval; no implementation work has started.
 
 ## Requested capabilities
 
@@ -48,3 +48,9 @@ The active unit-of-work plan is `aidlc-docs/inception/plans/unit-of-work-plan.md
 The generated unit artifacts are in `aidlc-docs/inception/application-design/`.
 
 The next approved stage is Functional Design for the `url-shortener-api` unit.
+
+The active Functional Design plan is `aidlc-docs/construction/plans/url-shortener-api-functional-design-plan.md`.
+
+The active Functional Design clarification is `aidlc-docs/construction/plans/url-shortener-api-functional-design-clarification-questions.md`.
+
+Functional Design artifacts are in `aidlc-docs/construction/url-shortener-api/functional-design/`.

@@ -270,6 +270,70 @@ keep README.md updated as we go for my github repository"
 
 ---
 
+## Construction - Functional Design Started
+**Timestamp**: 2026-09-25T06:46:23Z
+**User Input**: "ok start with construction phase"
+**AI Response**: "Recorded explicit authorization to start Construction and began Functional Design for the `url-shortener-api` unit."
+**Context**: CONSTRUCTION - Functional Design
+
+---
+
+## Functional Design - Planning Questions
+**Timestamp**: 2026-09-25T06:46:23Z
+**User Input**: "ok start with construction phase"
+**AI Response**: "Created a Functional Design plan and requested decisions on fixed short-code length and collision retry policy."
+**Context**: CONSTRUCTION - Functional Design; awaiting user answers
+
+---
+
+## Functional Design - User Response Requested
+**Timestamp**: 2026-09-25T06:46:23Z
+**User Input**: ""
+**AI Response**: "Requested completion of the Functional Design plan questions before generating functional-design artifacts."
+**Context**: CONSTRUCTION - Functional Design gate
+
+---
+
+## Functional Design - Planning Response
+**Timestamp**: 2026-09-25T06:51:54Z
+**User Input**: "done"
+**AI Response**: "Validated the selections of seven-character codes and five collision retries. Identified missing explicit input-size bounds required by the enabled security baseline."
+**Context**: CONSTRUCTION - Functional Design
+
+---
+
+## Functional Design - Input Limits Clarification
+**Timestamp**: 2026-09-25T06:51:54Z
+**User Input**: "done"
+**AI Response**: "Created a clarification question for destination-URL and JSON body size limits."
+**Context**: CONSTRUCTION - Functional Design; awaiting user answer
+
+---
+
+## Functional Design - Clarification Response Requested
+**Timestamp**: 2026-09-25T06:51:54Z
+**User Input**: ""
+**AI Response**: "Requested selection of explicit input limits before generating Functional Design artifacts."
+**Context**: CONSTRUCTION - Functional Design gate
+
+---
+
+## Functional Design - Input Limits Clarification Response
+**Timestamp**: 2026-09-25T06:52:44Z
+**User Input**: "done"
+**AI Response**: "Validated the selection of a 2,048-character destination-URL limit and a 4 KiB JSON-body limit."
+**Context**: CONSTRUCTION - Functional Design
+
+---
+
+## Functional Design - Approval Requested
+**Timestamp**: 2026-09-25T06:52:44Z
+**User Input**: ""
+**AI Response**: "Created the business logic model, business rules, and domain entities. Applicable security rules are compliant: validation bounds, explicitly public routes, safe errors, rate limiting, and fail-closed outcomes are documented. No blocking findings. Options: Request Changes, or Continue to Next Stage (NFR Requirements)."
+**Context**: CONSTRUCTION - Functional Design approval gate
+
+---
+
 ## Workspace Detection Findings
 **Timestamp**: 2026-09-25T05:23:45Z
 **User Input**: "Using AI-DLC, build a URL shortener API that takes a long URL and returns
