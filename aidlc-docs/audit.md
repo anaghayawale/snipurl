@@ -374,6 +374,46 @@ keep README.md updated as we go for my github repository"
 
 ---
 
+## NFR Requirements - Approval Response
+**Timestamp**: 2026-09-25T06:58:45Z
+**User Input**: "continue"
+**AI Response**: "Recorded explicit approval of NFR Requirements and proceeded to NFR Design."
+**Context**: CONSTRUCTION - NFR Requirements approved
+
+---
+
+## NFR Design - Planning Question
+**Timestamp**: 2026-09-25T06:58:45Z
+**User Input**: "continue"
+**AI Response**: "Created an NFR Design plan and requested the request-ID exposure policy for safe troubleshooting and structured logs."
+**Context**: CONSTRUCTION - NFR Design; awaiting user answer
+
+---
+
+## NFR Design - User Response Requested
+**Timestamp**: 2026-09-25T06:58:45Z
+**User Input**: ""
+**AI Response**: "Requested completion of the NFR Design plan question before generating NFR design artifacts."
+**Context**: CONSTRUCTION - NFR Design gate
+
+---
+
+## NFR Design - Planning Response
+**Timestamp**: 2026-09-25T07:01:05Z
+**User Input**: "done"
+**AI Response**: "Validated the selection to generate or safely accept request IDs, log them, and return them in X-Request-Id."
+**Context**: CONSTRUCTION - NFR Design
+
+---
+
+## NFR Design - Approval Requested
+**Timestamp**: 2026-09-25T07:01:05Z
+**User Input**: ""
+**AI Response**: "Created NFR design patterns and logical components for input boundaries, rate limiting, request correlation, structured logging, global safe errors, performance bounds, dependency hygiene, and best-effort availability. Applicable security requirements are compliant and remaining rules are N/A. No blocking findings. Options: Request Changes, or Continue to Next Stage (Infrastructure Design will be skipped; then Code Generation)."
+**Context**: CONSTRUCTION - NFR Design approval gate
+
+---
+
 ## Workspace Detection Findings
 **Timestamp**: 2026-09-25T05:23:45Z
 **User Input**: "Using AI-DLC, build a URL shortener API that takes a long URL and returns
