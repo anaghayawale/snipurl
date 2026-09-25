@@ -537,3 +537,13 @@ The Operations stage will eventually include:
 - Application code: Workspace root (NEVER in aidlc-docs/)
 - Documentation: aidlc-docs/ only
 - Project structure: See code-generation.md for patterns by project type
+
+## Human Approval Required
+Do not proceed to the next stage, sub-stage, or write any code until I
+explicitly say "approved" or "proceed". After generating or updating any
+artifact, stop and wait for my review — do not assume approval.
+
+## README Maintenance
+After every approved stage, update README.md with: a short project
+overview, the current AI-DLC phase/stage we're on, setup/run instructions,
+and a brief summary of what's been built so far.
