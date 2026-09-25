@@ -246,6 +246,22 @@ keep README.md updated as we go for my github repository"
 
 ---
 
+## Units Generation - Plan Approval Response
+**Timestamp**: 2026-09-25T06:11:38Z
+**User Input**: "let's procces, do let me know before we atert with contruction phase"
+**AI Response**: "Recorded explicit approval of the unit-of-work plan, generated the unit artifacts, and committed to stop before Construction until the user is notified and directs it."
+**Context**: INCEPTION - Units Generation, Part 1 approved; Part 2 generated
+
+---
+
+## Units Generation - Generated Artifacts Approval Requested
+**Timestamp**: 2026-09-25T06:11:38Z
+**User Input**: ""
+**AI Response**: "Generated one `url-shortener-api` unit, its dependency matrix, and complete story map. All five stories are assigned and no inter-unit dependencies exist. Options: Request Changes, or Approve Units. Construction will not start after approval without a separate user instruction."
+**Context**: INCEPTION - Units Generation, Part 2 approval gate
+
+---
+
 ## Workspace Detection Findings
 **Timestamp**: 2026-09-25T05:23:45Z
 **User Input**: "Using AI-DLC, build a URL shortener API that takes a long URL and returns

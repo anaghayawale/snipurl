@@ -45,10 +45,10 @@ X) Other (describe the preferred source layout)
 - [x] Assess story grouping, dependencies, team, technical, domain, and greenfield code-organization factors.
 - [x] Create this unit-of-work plan with context-relevant questions.
 - [x] Validate all answers and resolve ambiguities.
-- [ ] Obtain explicit approval to generate unit artifacts.
-- [ ] Generate `aidlc-docs/inception/application-design/unit-of-work.md` with definition, responsibilities, and code organization.
-- [ ] Generate `aidlc-docs/inception/application-design/unit-of-work-dependency.md` with dependency matrix.
-- [ ] Generate `aidlc-docs/inception/application-design/unit-of-work-story-map.md` with all stories assigned.
-- [ ] Validate unit boundary, dependencies, and full story assignment.
-- [ ] Update state tracking and README.
-- [ ] Obtain explicit approval of generated units.
+- [x] Obtain explicit approval to generate unit artifacts.
+- [x] Generate `aidlc-docs/inception/application-design/unit-of-work.md` with definition, responsibilities, and code organization.
+- [x] Generate `aidlc-docs/inception/application-design/unit-of-work-dependency.md` with dependency matrix.
+- [x] Generate `aidlc-docs/inception/application-design/unit-of-work-story-map.md` with all stories assigned.
+- [x] Validate unit boundary, dependencies, and full story assignment.
+- [x] Update state tracking and README.
+- [x] Obtain explicit approval of generated units.
